@@ -1,0 +1,7 @@
+I've learned a bunch about Python!
+I've learned and solidified my knowledge of naming variables, like we can't use numbers for the beginning, or special characters at all.
+I've also gotten a better understanding of what variables actually are.
+I've also understood better what different types of errors actually indicate.
+I've learned a bunch of list-manipulating methods.
+I've finally understood what list comprehension is. Also I got some proper training on slicing and copying lists.
+I've also had a deep dive into all the technicalities and details in functions which is super cool.

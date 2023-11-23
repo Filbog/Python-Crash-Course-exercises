@@ -27,7 +27,7 @@ def movie_tickets_if():
                 print("The ticket is 15$")
 
 
-movie_tickets_if()
+# movie_tickets_if()
 
 
 def movie_tickets_break():
@@ -65,3 +65,54 @@ def movie_tickets_flag():
 
 
 # movie_tickets_flag()
+
+
+def sandwiches():
+    sandwich_orders = [
+        "ham and cheese",
+        "cheese",
+        "pastrami",
+        "chicken",
+        "avocado",
+        "gyros",
+        "pastrami",
+        "peanut butter",
+        "pastrami",
+    ]
+    finished_sandwiches = []
+
+    # We've run out of pastrami!
+    print("We've run out of pastrami!")
+    while "pastrami" in sandwich_orders:
+        sandwich_orders.remove("pastrami")
+
+    for sandwich in sandwich_orders:
+        print(f"Your {sandwich} sandwich is ready!")
+        finished_sandwiches.append(sandwich)
+
+    print("Following sandwiches have beeen made: ")
+    for finished in finished_sandwiches[:-1]:
+        print(f"{finished.title()},")
+    print(f"{finished_sandwiches[-1]}.")
+
+
+# sandwiches()
+
+
+def vacation():
+    poll = {}
+    active = True
+
+    while active:
+        name = input("What's your name?")
+        dream_vacation = input("Where would you go for you dream vacation?")
+        next_responds = input("Would you like another person to respond? (yes/no)")
+        poll[name] = dream_vacation
+        if next_responds.lower() == "no":
+            active = False
+    print("Polling complete. Here are the results:")
+    for name, vacation in poll.items():
+        print(f"{name.title()} would love to go to {vacation.title()}")
+
+
+vacation()
